@@ -97,7 +97,7 @@ if FRONTEND_URLS and FRONTEND_URLS != ['']:
 if CORS_ALLOW_ALL_ORIGINS and not DEBUG_MODE:
     CORS_ALLOW_CREDENTIALS = False
     print("⚠️ WARNING: CORS_ALLOW_ALL_ORIGINS=True en production - CORS_ALLOW_CREDENTIALS désactivé pour la sécurité")
-elif not DEBUG_MODE:
+elif DEBUG_MODE:
     CORS_ALLOW_CREDENTIALS = True
 
 # Headers CORS autorisés
