@@ -219,9 +219,6 @@ SPECTACULAR_SETTINGS = {
     'LICENSE': {'name': 'BSD License'},
     'SERVE_INCLUDE_SCHEMA': False,
 }
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
 
 # --- Configuration EMAIL pour la newsletter et l'envoi SMTP ---
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
